@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elija\\Unity Projects\\FrightGameJam2025\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F6186B5-E39E-49DD-6AD7-4C10670D5C95}|Assembly-CSharp.csproj|C:\\Users\\elija\\Unity Projects\\FrightGameJam2025\\assets\\boats\\mainboat\\driveboat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F6186B5-E39E-49DD-6AD7-4C10670D5C95}|Assembly-CSharp.csproj|solutionrelative:assets\\boats\\mainboat\\driveboat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F6186B5-E39E-49DD-6AD7-4C10670D5C95}|Assembly-CSharp.csproj|c:\\users\\elija\\unity projects\\frightgamejam2025\\assets\\followrigid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F6186B5-E39E-49DD-6AD7-4C10670D5C95}|Assembly-CSharp.csproj|solutionrelative:assets\\followrigid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FollowRigid.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\FrightGameJam2025\\Assets\\FollowRigid.cs",
+              "RelativeDocumentMoniker": "Assets\\FollowRigid.cs",
+              "ToolTip": "C:\\Users\\elija\\Unity Projects\\FrightGameJam2025\\Assets\\FollowRigid.cs",
+              "RelativeToolTip": "Assets\\FollowRigid.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T05:25:39.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "driveBoat.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\FrightGameJam2025\\Assets\\Boats\\mainBoat\\driveBoat.cs",
+              "RelativeDocumentMoniker": "Assets\\Boats\\mainBoat\\driveBoat.cs",
+              "ToolTip": "C:\\Users\\elija\\Unity Projects\\FrightGameJam2025\\Assets\\Boats\\mainBoat\\driveBoat.cs",
+              "RelativeToolTip": "Assets\\Boats\\mainBoat\\driveBoat.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAgwHcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T02:08:16.918Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
