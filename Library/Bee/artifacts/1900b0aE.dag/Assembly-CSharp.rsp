@@ -360,7 +360,6 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Boats/mainBoat/driveBoat.cs"
 "Assets/FollowRigid.cs"
-"Assets/jaflkaj.cs"
 "Assets/Player/FlashlightController.cs"
 "Assets/Player/FPSController.cs"
 "Assets/Player/Interactor.cs"
