@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class FollowRigid : MonoBehaviour
 {
-    [SerializeField] Transform rigidbody;
+    [SerializeField] Transform rb;
     void Update()
     {
-        transform.position = rigidbody.position;
-        transform.rotation = rigidbody.rotation;
+        transform.position = rb.position;
+        transform.rotation = rb.rotation;
     }
 }

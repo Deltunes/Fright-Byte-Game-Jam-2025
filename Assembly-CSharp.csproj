@@ -63,6 +63,7 @@
     <Compile Include="Assets\water\waterFollow.cs" />
     <Compile Include="Assets\Player\FlashlightController.cs" />
     <Compile Include="Assets\FollowRigid.cs" />
+    <Compile Include="Assets\CraneController.cs" />
     <Compile Include="Assets\Player\Interactor.cs" />
     <Compile Include="Assets\Boats\mainBoat\driveBoat.cs" />
     <Compile Include="Assets\water\AQUAS-Lite\Scripts\AQUAS_Lite_Camera.cs" />
