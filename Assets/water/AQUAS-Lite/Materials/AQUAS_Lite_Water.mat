@@ -78,7 +78,7 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _Density: 0.24
-    - _DepthTransparency: 0.2
+    - _DepthTransparency: 0.5
     - _DetailNormalMapScale: 1
     - _DistanceFade: 0.5
     - _Distortion: 0.119

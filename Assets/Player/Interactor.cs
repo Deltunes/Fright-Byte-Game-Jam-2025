@@ -26,9 +26,6 @@ public class Interactor : MonoBehaviour
         {
             if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
             {
-                InteractVisual.GetComponent<MeshRenderer>().enabled = true;
-                InteractVisual.transform.LookAt(player.transform);
-                InteractVisual.transform.Rotate(Vector3.right, 50, Space.Self);
                 interactObj.Interact(player, InteractVisual);
             }
         }

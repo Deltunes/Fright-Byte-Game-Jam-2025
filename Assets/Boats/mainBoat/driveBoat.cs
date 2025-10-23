@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class driveBoat : MonoBehaviour, IInteractable
@@ -19,6 +18,7 @@ public class driveBoat : MonoBehaviour, IInteractable
     {
         if (playerDriving)
         {
+            print(rb.velocity);
             currSpeed = 0f;
             currRotate = 0f;
 
@@ -28,21 +28,21 @@ public class driveBoat : MonoBehaviour, IInteractable
                 {
                     engineSound.pitch += 0.001f;
                 }
-                currSpeed = 16f;
+                currSpeed = 100f;
             }
             else if (Input.GetKey(KeyCode.S))
             {
-                currSpeed = -8f;
+                currSpeed = -50f;
             }
 
             if (Input.GetKey(KeyCode.D))
             {
-                currRotate = 10f;
+                currRotate = 80f;
                 transform.Rotate(Vector3.up, 200 * Time.deltaTime, Space.Self);
             }
             if (Input.GetKey(KeyCode.A))
             {
-                currRotate = -10f;
+                currRotate = -80f;
                 transform.Rotate(Vector3.up, -200 * Time.deltaTime, Space.Self);
             }
 
@@ -62,6 +62,9 @@ public class driveBoat : MonoBehaviour, IInteractable
 
     public void Interact(CharacterController interactor, GameObject InteractVisual)
     {
+        InteractVisual.GetComponent<MeshRenderer>().enabled = true;
+        InteractVisual.transform.LookAt(interactor.transform);
+        InteractVisual.transform.Rotate(Vector3.right, 50, Space.Self);
         InteractVisual.transform.position = transform.position + (Vector3.up * 0.7f);
         if (Input.GetKeyDown(KeyCode.E))
         {
