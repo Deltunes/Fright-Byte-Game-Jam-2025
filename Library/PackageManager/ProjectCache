@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638962471698434711
-    m_Hash: 15971113
+      ticks: 638968643471652936
+    m_Hash: 2266087005
   m_LockFileStatus:
     m_FilePath: C:/Users/elija/Unity Projects/FrightByteGameJam/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638962471698474712
-    m_Hash: 2881354407
+      ticks: 638968643471652936
+    m_Hash: 2131818164
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -894,13 +894,15 @@ m_ResolvedPackages:
     - 1.9.6
     - 1.9.7
     - 1.9.8
+    - 1.9.9
     compatible:
     - 1.9.4
     - 1.9.5
     - 1.9.6
     - 1.9.7
     - 1.9.8
-    recommended: 1.9.8
+    - 1.9.9
+    recommended: 1.9.9
     deprecated:
     - 1.8.0-pre.1
   dependencies:
