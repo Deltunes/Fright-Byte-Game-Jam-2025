@@ -8,18 +8,20 @@ public class CraneController : MonoBehaviour, IInteractable
     FPSController FPS;
     [SerializeField] AudioSource creaking;
     [SerializeField] Transform EPosition;
-    [SerializeField] GameObject Thing;
+    [SerializeField] GameObject gun;
     [SerializeField] Camera cameraForRay;
     //Vector3 wantPosition;
+    Transform cube1;
     Transform cube2;
     Transform cube3;
 
     void Start()
     {
-        cube2 = transform.GetChild(0);
+        cube1 = transform.GetChild(0);
+        cube2 = cube1.GetChild(0);
         cube3 = cube2.GetChild(0);
     }
-    // Update is called once per frame
+
     void Update()
     {
         /*
@@ -38,6 +40,8 @@ public class CraneController : MonoBehaviour, IInteractable
                 creaking.Play();
             }
 
+            print(cube3.localPosition.z);
+
             if (Input.GetKey(KeyCode.Mouse0))
             {
                 if (cube3.localPosition.z >= 0.01f)
@@ -47,7 +51,7 @@ public class CraneController : MonoBehaviour, IInteractable
             }
             else if (Input.GetKey(KeyCode.Mouse1))
             {
-                if (cube3.localPosition.z <= 0.09f)
+                if (cube3.localPosition.z <= 0.075f)
                 {
                     cube3.transform.Translate(Vector3.forward * 3 * Time.deltaTime);
                 }
@@ -56,7 +60,6 @@ public class CraneController : MonoBehaviour, IInteractable
             {
                 if (Input.GetKey(KeyCode.W))
                 {
-                    print(cube2.localPosition.y);
                     if (cube2.localPosition.y <= -0.055f)
                     {
                         cube2.transform.Translate(Vector3.up * 2 * Time.deltaTime);
@@ -69,21 +72,22 @@ public class CraneController : MonoBehaviour, IInteractable
                         cube2.transform.Translate(-Vector3.up * 2 * Time.deltaTime);
                     }
                 }
-                
+
                 //Vector3 targetDir = wantPosition - transform.GetChild(0).position;
                 //print(targetDir);
+
                 if (Input.GetKey(KeyCode.D))
                 {
-                    if (transform.localRotation.x >= -0.7)
+                    if (cube1.transform.localRotation.z <= 0.95f)
                     {
-                        transform.Rotate(Vector3.forward, 45 * Time.deltaTime, Space.Self);
+                        cube1.transform.Rotate(Vector3.forward, 45 * Time.deltaTime, Space.Self);
                     }
                 }
                 else if (Input.GetKey(KeyCode.A))
                 {
-                    if (transform.localRotation.x <= -0.05)
+                    if (cube1.transform.localRotation.z >= -0.1f)
                     {
-                        transform.Rotate(Vector3.forward, -45 * Time.deltaTime, Space.Self);
+                        cube1.transform.Rotate(Vector3.forward, -45 * Time.deltaTime, Space.Self);
                     }
                 }
             }
@@ -95,11 +99,9 @@ public class CraneController : MonoBehaviour, IInteractable
     }
     public void Interact(CharacterController interactor, GameObject InteractVisual)
     {
-        InteractVisual.GetComponent<MeshRenderer>().enabled = true;
-        InteractVisual.transform.LookAt(interactor.transform);
-        InteractVisual.transform.Rotate(Vector3.right, 50, Space.Self);
+        
         InteractVisual.transform.position = EPosition.position;
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !gun.activeSelf)
         {
             FPS = interactor.GetComponent<FPSController>();
 

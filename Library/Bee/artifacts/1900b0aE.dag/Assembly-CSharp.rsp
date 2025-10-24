@@ -118,7 +118,6 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
--define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -334,8 +333,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Editor.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.ref.dll"
@@ -363,12 +360,16 @@
 "Assets/Boats/mainBoat/FollowRigid.cs"
 "Assets/Crane/CollectScrap.cs"
 "Assets/Crane/CraneController.cs"
+"Assets/eye/EyeBoss.cs"
 "Assets/eye/EyeFollow.cs"
+"Assets/GunPickup.cs"
 "Assets/PickupTrigger.cs"
 "Assets/Player/FlashlightController.cs"
 "Assets/Player/FPSController.cs"
+"Assets/Player/Gun.cs"
 "Assets/Player/Interactor.cs"
 "Assets/Quit.cs"
+"Assets/TV/SecretCode.cs"
 "Assets/water/AQUAS-Lite/Scripts/AQUAS_Lite_Camera.cs"
 "Assets/water/AQUAS-Lite/Scripts/AQUAS_Lite_CamNav.cs"
 "Assets/water/AQUAS-Lite/Scripts/AQUAS_Lite_Reflection.cs"

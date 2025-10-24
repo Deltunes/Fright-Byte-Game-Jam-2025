@@ -18,7 +18,6 @@ public class driveBoat : MonoBehaviour, IInteractable
     {
         if (playerDriving)
         {
-            print(rb.velocity);
             currSpeed = 0f;
             currRotate = 0f;
 
@@ -62,10 +61,8 @@ public class driveBoat : MonoBehaviour, IInteractable
 
     public void Interact(CharacterController interactor, GameObject InteractVisual)
     {
-        InteractVisual.GetComponent<MeshRenderer>().enabled = true;
-        InteractVisual.transform.LookAt(interactor.transform);
-        InteractVisual.transform.Rotate(Vector3.right, 50, Space.Self);
         InteractVisual.transform.position = transform.position + (Vector3.up * 0.7f);
+
         if (Input.GetKeyDown(KeyCode.E))
         {
             FPS = interactor.GetComponent<FPSController>();

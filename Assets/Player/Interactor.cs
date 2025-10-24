@@ -16,6 +16,7 @@ public class Interactor : MonoBehaviour
     // Update is called once per frame
     private void Start()
     {
+        InteractRange = 1.5f;
         player = GetComponent<CharacterController>();
     }
     void Update()
@@ -26,6 +27,9 @@ public class Interactor : MonoBehaviour
         {
             if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
             {
+                InteractVisual.GetComponent<MeshRenderer>().enabled = true;
+                InteractVisual.transform.LookAt(player.transform);
+                InteractVisual.transform.Rotate(Vector3.right, 50, Space.Self);
                 interactObj.Interact(player, InteractVisual);
             }
         }

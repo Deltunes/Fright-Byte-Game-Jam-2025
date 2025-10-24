@@ -343,7 +343,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 91d38030d74550d4083965a2f1a1e17c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -659,12 +659,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 8166734354056694255}
   walkingSteps: {fileID: 8300000, guid: 235cf8495e9045d49b71b329a771d56c, type: 3}
-  runningSteps: {fileID: 8300000, guid: d7fa1670423d1c64b8a8ed8d46aca257, type: 3}
   footstepSound: {fileID: 8425252817122663583}
+  scrapText: {fileID: 0}
+  scrapCollected: 0
   walkSpeed: 7
-  runSpeed: 14
-  maxJumps: 2
-  jumpPower: 10
   gravity: 20
   lookSpeed: 2
   lookXLimit: 90
