@@ -44,7 +44,7 @@ public class FPSController : MonoBehaviour
     
     void Update()
     {
-        print(playerHealth);
+        //print(playerHealth);
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
         forward.Normalize();

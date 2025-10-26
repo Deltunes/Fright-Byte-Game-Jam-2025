@@ -64,9 +64,9 @@ public class EyeFollow : MonoBehaviour
                 rb.excludeLayers = LayerMask.GetMask("Default");
             }
             
-            if (rb.transform.position.y < -8f)
+            if (rb.transform.position.y < -9f)
             {
-                rb.AddForce(Vector3.up * 50f);
+                rb.AddForce(Vector3.up * 80f);
             }
         }
     }

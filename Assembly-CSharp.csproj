@@ -74,6 +74,7 @@
     <Compile Include="Assets\Boats\mainBoat\FollowRigid.cs" />
     <Compile Include="Assets\Player\Gun.cs" />
     <Compile Include="Assets\water\AQUAS-Lite\Scripts\AQUAS_Lite_Camera.cs" />
+    <Compile Include="Assets\CompleteScript.cs" />
     <Compile Include="Assets\eye\EyeFollow.cs" />
     <Compile Include="Assets\Crane\CraneController.cs" />
     <Compile Include="Assets\water\AQUAS-Lite\Scripts\AQUAS_Lite_CamNav.cs" />
