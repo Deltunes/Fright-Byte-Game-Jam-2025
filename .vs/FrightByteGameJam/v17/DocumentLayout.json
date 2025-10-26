@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\assets\\player\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|c:\\users\\elija\\unity projects\\frightbytegamejam\\assets\\gunpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|solutionrelative:assets\\gunpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|c:\\users\\elija\\unity projects\\frightbytegamejam\\assets\\eye\\eyefollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|solutionrelative:assets\\eye\\eyefollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|c:\\users\\elija\\unity projects\\frightbytegamejam\\assets\\pickuptrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|solutionrelative:assets\\pickuptrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\assets\\player\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|c:\\users\\elija\\unity projects\\frightbytegamejam\\assets\\crane\\cranecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|solutionrelative:assets\\crane\\cranecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|c:\\users\\elija\\unity projects\\frightbytegamejam\\assets\\player\\interactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\interactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\assets\\eye\\eyefollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|solutionrelative:assets\\eye\\eyefollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\assets\\boats\\mainboat\\driveboat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|solutionrelative:assets\\boats\\mainboat\\driveboat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|c:\\users\\elija\\unity projects\\frightbytegamejam\\assets\\player\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E12967E1-4BEB-D280-74C1-A877F8AE5678}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,40 +47,93 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PickupTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\Assets\\PickupTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\PickupTrigger.cs",
+              "ToolTip": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\Assets\\PickupTrigger.cs",
+              "RelativeToolTip": "Assets\\PickupTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T04:24:26.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GunPickup.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\Assets\\GunPickup.cs",
+              "RelativeDocumentMoniker": "Assets\\GunPickup.cs",
+              "ToolTip": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\Assets\\GunPickup.cs",
+              "RelativeToolTip": "Assets\\GunPickup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T04:24:21.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CraneController.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\Assets\\Crane\\CraneController.cs",
+              "RelativeDocumentMoniker": "Assets\\Crane\\CraneController.cs",
+              "ToolTip": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\Assets\\Crane\\CraneController.cs",
+              "RelativeToolTip": "Assets\\Crane\\CraneController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T04:22:14.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Interactor.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\Assets\\Player\\Interactor.cs",
+              "RelativeDocumentMoniker": "Assets\\Player\\Interactor.cs",
+              "ToolTip": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\Assets\\Player\\Interactor.cs",
+              "RelativeToolTip": "Assets\\Player\\Interactor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T04:19:04.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "EyeFollow.cs",
               "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\Assets\\eye\\EyeFollow.cs",
               "RelativeDocumentMoniker": "Assets\\eye\\EyeFollow.cs",
               "ToolTip": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\Assets\\eye\\EyeFollow.cs",
               "RelativeToolTip": "Assets\\eye\\EyeFollow.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAtwEwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAtwBwAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T15:46:39.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "FPSController.cs",
               "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\Assets\\Player\\FPSController.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\FPSController.cs",
               "ToolTip": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\Assets\\Player\\FPSController.cs",
               "RelativeToolTip": "Assets\\Player\\FPSController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwCsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCYAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T15:34:49.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "driveBoat.cs",
               "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\Assets\\Boats\\mainBoat\\driveBoat.cs",
               "RelativeDocumentMoniker": "Assets\\Boats\\mainBoat\\driveBoat.cs",
               "ToolTip": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\Assets\\Boats\\mainBoat\\driveBoat.cs",
               "RelativeToolTip": "Assets\\Boats\\mainBoat\\driveBoat.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T06:39:43.445Z"
+              "WhenOpened": "2025-10-24T06:39:43.445Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -74,9 +143,10 @@
               "RelativeDocumentMoniker": "Assets\\Player\\Gun.cs",
               "ToolTip": "C:\\Users\\elija\\Unity Projects\\FrightByteGameJam\\Assets\\Player\\Gun.cs",
               "RelativeToolTip": "Assets\\Player\\Gun.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwC0AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwC0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T05:20:35.511Z"
+              "WhenOpened": "2025-10-24T05:20:35.511Z",
+              "EditorCaption": ""
             }
           ]
         }

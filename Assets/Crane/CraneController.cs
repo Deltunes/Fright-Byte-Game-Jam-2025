@@ -40,8 +40,6 @@ public class CraneController : MonoBehaviour, IInteractable
                 creaking.Play();
             }
 
-            print(cube3.localPosition.z);
-
             if (Input.GetKey(KeyCode.Mouse0))
             {
                 if (cube3.localPosition.z >= 0.01f)

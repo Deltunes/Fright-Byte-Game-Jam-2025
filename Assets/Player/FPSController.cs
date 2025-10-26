@@ -14,6 +14,7 @@ public class FPSController : MonoBehaviour
     public AudioClip walkingSteps;
     public AudioSource footstepSound;
     public TextMeshProUGUI scrapText;
+    public Transform playerStartPosition;
     public int scrapCollected = 0;
     public float playerHealth = 200f;
 
@@ -35,6 +36,7 @@ public class FPSController : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+        transform.position = playerStartPosition.position;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
