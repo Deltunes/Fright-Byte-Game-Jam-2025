@@ -366,6 +366,7 @@
 "Assets/eye/EyeBoss.cs"
 "Assets/eye/EyeFollow.cs"
 "Assets/GunPickup.cs"
+"Assets/ParentPlayerToBoat.cs"
 "Assets/PickupTrigger.cs"
 "Assets/Player/FlashlightController.cs"
 "Assets/Player/FPSController.cs"

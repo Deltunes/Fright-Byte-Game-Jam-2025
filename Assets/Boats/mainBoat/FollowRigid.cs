@@ -5,7 +5,7 @@ using UnityEngine;
 public class FollowRigid : MonoBehaviour
 {
     [SerializeField] Transform rb;
-    void Update()
+    void LateUpdate()
     {
         transform.position = rb.position;
         transform.rotation = rb.rotation;

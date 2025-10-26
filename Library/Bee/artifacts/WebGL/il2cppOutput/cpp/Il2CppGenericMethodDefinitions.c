@@ -12,7 +12,7 @@
 
 
 IL2CPP_EXTERN_C const Il2CppMethodSpec g_Il2CppMethodSpecTable[];
-const Il2CppMethodSpec g_Il2CppMethodSpecTable[36363] = 
+const Il2CppMethodSpec g_Il2CppMethodSpecTable[36364] = 
 {
 { 11828, 147, -1 },
 { 11945, 374, -1 },
@@ -36212,6 +36212,7 @@ const Il2CppMethodSpec g_Il2CppMethodSpecTable[36363] =
 { 19763, -1, 2143 },
 { 19763, -1, 2170 },
 { 19763, -1, 2171 },
+{ 19763, -1, 2134 },
 { 19763, -1, 413 },
 { 19763, -1, 1016 },
 { 19763, -1, 2172 },

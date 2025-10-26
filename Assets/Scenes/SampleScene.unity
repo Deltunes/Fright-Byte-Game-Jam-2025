@@ -443,19 +443,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1215259515}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5359621359832041934, guid: 01997be580115934d98fa141dd35cbd4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.2299995
+      value: 16.83
       objectReference: {fileID: 0}
     - target: {fileID: 5359621359832041934, guid: 01997be580115934d98fa141dd35cbd4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0869999
+      value: -7.913
       objectReference: {fileID: 0}
     - target: {fileID: 5359621359832041934, guid: 01997be580115934d98fa141dd35cbd4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.8999939
+      value: -148.5
       objectReference: {fileID: 0}
     - target: {fileID: 5359621359832041934, guid: 01997be580115934d98fa141dd35cbd4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2575,11 +2575,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7488722512393962684, guid: 01997be580115934d98fa141dd35cbd4, type: 3}
   m_PrefabInstance: {fileID: 273912986}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &808811984 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5359621359832041934, guid: 01997be580115934d98fa141dd35cbd4, type: 3}
-  m_PrefabInstance: {fileID: 273912986}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &837337578
 GameObject:
   m_ObjectHideFlags: 0
@@ -3399,6 +3394,7 @@ MonoBehaviour:
   rb: {fileID: 1852753590}
   InteractVisual: {fileID: 1227842734}
   engineSound: {fileID: 1695644125}
+  player: {fileID: 808811983}
 --- !u!23 &1129448906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3988,7 +3984,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 808811984}
   - {fileID: 1076909383}
   - {fileID: 1227842738}
   - {fileID: 268041079}
@@ -4816,6 +4811,7 @@ GameObject:
   - component: {fileID: 1451849432}
   - component: {fileID: 1451849434}
   - component: {fileID: 1451849435}
+  - component: {fileID: 1451849436}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -4877,6 +4873,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   completeText: {fileID: 2127912234}
   player: {fileID: 808811983}
+--- !u!114 &1451849436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451849431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f7dfe4d5c525f945882a02843c90cb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 808811983}
+  boat: {fileID: 1215259514}
+  otu: {fileID: 0}
 --- !u!1001 &1455779590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6675,6 +6686,7 @@ SceneRoots:
   - {fileID: 1451849433}
   - {fileID: 705507995}
   - {fileID: 1852753593}
+  - {fileID: 273912986}
   - {fileID: 1215259515}
   - {fileID: 1360025016}
   - {fileID: 674769164}

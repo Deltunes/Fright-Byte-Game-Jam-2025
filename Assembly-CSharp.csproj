@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\water\waterFollow.cs" />
+    <Compile Include="Assets\ParentPlayerToBoat.cs" />
     <Compile Include="Assets\Player\FlashlightController.cs" />
     <Compile Include="Assets\TV\SecretCode.cs" />
     <Compile Include="Assets\Quit.cs" />

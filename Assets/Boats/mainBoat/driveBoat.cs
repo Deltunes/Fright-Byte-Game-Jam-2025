@@ -8,6 +8,7 @@ public class driveBoat : MonoBehaviour, IInteractable
     [SerializeField] Rigidbody rb;
     [SerializeField] GameObject InteractVisual;
     [SerializeField] AudioSource engineSound;
+    [SerializeField] GameObject player;
     bool playerDriving = false;
     FPSController FPS;
 

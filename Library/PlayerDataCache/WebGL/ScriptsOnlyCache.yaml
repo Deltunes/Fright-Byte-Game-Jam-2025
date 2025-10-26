@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - AQUAS_Lite.AQUAS_Lite_Reflection
     - BoatRadar
     - CollectScrap
+    - CompleteScript
     - CraneController
     - EyeBoss
     - EyeFollow
@@ -12,7 +13,6 @@ ScriptsOnlyBuild:
     - Gun
     - GunPickup
     - Interactor
-    - NewBehaviourScript
     - PickupTrigger
     - Quit
     - SecretCode
@@ -20,7 +20,6 @@ ScriptsOnlyBuild:
     - waterFollow
     Unity.Play.Publisher.Editor.dll:
     - Unity.Play.Publisher.Editor.AnalyticsHelper
-    - Unity.Play.Publisher.Editor.PublisherWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -136,39 +135,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18190}
     - Class: 114
-      Script: {instanceID: 18734}
+      Script: {instanceID: 18322}
     - Class: 114
-      Script: {instanceID: 18818}
+      Script: {instanceID: 18738}
     - Class: 114
-      Script: {instanceID: 19196}
+      Script: {instanceID: 18822}
     - Class: 114
-      Script: {instanceID: 19230}
+      Script: {instanceID: 19202}
     - Class: 114
-      Script: {instanceID: 19448}
+      Script: {instanceID: 19238}
     - Class: 114
-      Script: {instanceID: 19738}
+      Script: {instanceID: 19460}
     - Class: 114
-      Script: {instanceID: 20028}
+      Script: {instanceID: 19750}
     - Class: 114
-      Script: {instanceID: 20112}
+      Script: {instanceID: 20040}
     - Class: 114
-      Script: {instanceID: 20146}
+      Script: {instanceID: 20126}
     - Class: 114
-      Script: {instanceID: 20624}
+      Script: {instanceID: 20160}
     - Class: 114
-      Script: {instanceID: 20666}
+      Script: {instanceID: 20642}
     - Class: 114
-      Script: {instanceID: 20694}
+      Script: {instanceID: 20684}
     - Class: 114
-      Script: {instanceID: 20846}
+      Script: {instanceID: 20712}
     - Class: 114
-      Script: {instanceID: 21026}
+      Script: {instanceID: 20866}
     - Class: 114
-      Script: {instanceID: 22188}
+      Script: {instanceID: 21048}
     - Class: 114
-      Script: {instanceID: 22486}
+      Script: {instanceID: 22220}
     - Class: 114
-      Script: {instanceID: 23732}
+      Script: {instanceID: 22518}
+    - Class: 114
+      Script: {instanceID: 23718}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -308,7 +309,7 @@ ScriptsOnlyBuild:
     className: GunPickup
   - hash:
       serializedVersion: 2
-      Hash: 12f9073cc156f1cfbb2a9ae8eef30642
+      Hash: b4127ab63ce98b5c5aca59c5bad8d627
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: FPSController
@@ -456,6 +457,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseDragMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 5269bba5b2472849e224bc9aeb66ad40
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CompleteScript
   - hash:
       serializedVersion: 2
       Hash: d7c8092511063e0dae8106bfc8ed63dd
