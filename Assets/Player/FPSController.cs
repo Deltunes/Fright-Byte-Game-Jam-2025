@@ -14,6 +14,7 @@ public class FPSController : MonoBehaviour
     public AudioClip walkingSteps;
     public AudioSource footstepSound;
     public TextMeshProUGUI scrapText;
+    public TextMeshProUGUI healthText;
     public Transform playerStartPosition;
     public int scrapCollected = 0;
     public float playerHealth = 200f;
@@ -75,6 +76,7 @@ public class FPSController : MonoBehaviour
 
         // Scrap Text Display
         scrapText.text = scrapCollected.ToString() + "/10";
+        healthText.text = ((int)playerHealth).ToString() + "/200";
     }
 
     private void footstep()

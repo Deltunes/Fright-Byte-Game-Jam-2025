@@ -14,6 +14,7 @@ public class SecretCode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        print("test");
         if (Input.GetKey(KeyCode.F) && Input.GetKeyDown(KeyCode.G))
         {
             if (familyGuy.activeSelf == false)
