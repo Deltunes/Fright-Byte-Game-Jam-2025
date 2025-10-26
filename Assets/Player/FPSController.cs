@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using TMPro;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.UI;
@@ -14,6 +15,7 @@ public class FPSController : MonoBehaviour
     public AudioSource footstepSound;
     public TextMeshProUGUI scrapText;
     public int scrapCollected = 0;
+    public float playerHealth = 200f;
 
     public float walkSpeed = 20f;
 
@@ -39,6 +41,7 @@ public class FPSController : MonoBehaviour
     
     void Update()
     {
+        print(playerHealth);
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
         forward.Normalize();
@@ -69,7 +72,7 @@ public class FPSController : MonoBehaviour
         transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
 
         // Scrap Text Display
-        scrapText.text = scrapCollected.ToString() + "/8";
+        scrapText.text = scrapCollected.ToString() + "/10";
     }
 
     private void footstep()

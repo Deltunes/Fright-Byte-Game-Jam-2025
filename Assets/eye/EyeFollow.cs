@@ -44,7 +44,7 @@ public class EyeFollow : MonoBehaviour
         {
             if (boatSpotted)
             {
-                if (distance > 5f)
+                if (distance > 3f)
                 {
                     transform.LookAt(player.transform.position);
                     transform.Rotate(Vector3.right, -90f, Space.Self);
@@ -64,10 +64,19 @@ public class EyeFollow : MonoBehaviour
                 rb.excludeLayers = LayerMask.GetMask("Default");
             }
             
-            if (rb.transform.position.y < -7.75)
+            if (rb.transform.position.y < -8f)
             {
                 rb.AddForce(Vector3.up * 50f);
             }
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.transform.CompareTag("Player"))
+        {
+            FPSController FPS = other.transform.GetComponent<FPSController>();
+            FPS.playerHealth -= 0.1f;
         }
     }
 }

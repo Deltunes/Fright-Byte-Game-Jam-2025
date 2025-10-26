@@ -16,6 +16,11 @@ public class driveBoat : MonoBehaviour, IInteractable
 
     private void Update()
     {
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            currSpeed = 100f;
+            rb.AddRelativeForce(Vector3.forward * currSpeed);
+        }
         if (playerDriving)
         {
             currSpeed = 0f;

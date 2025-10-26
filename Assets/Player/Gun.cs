@@ -6,7 +6,6 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     [SerializeField] GameObject gun;
-    [SerializeField] GameObject bulletHole;
     [SerializeField] Animator gunAnimator;
     public Transform InteractorSource;
     public AudioSource gunSound;
@@ -45,7 +44,6 @@ public class Gun : MonoBehaviour
                         boss.hurtSound.Play();
                         boss.eyeHealth -= gunDamage;
                     }
-                    //enemy.dead = true;
                 }
             }
         }
