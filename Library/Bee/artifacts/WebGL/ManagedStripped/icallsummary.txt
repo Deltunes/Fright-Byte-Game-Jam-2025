@@ -95,8 +95,11 @@ UnityEngine.Application::get_isFocused
 UnityEngine.Application::get_isPlaying
 UnityEngine.Application::get_streamingAssetsPath
 UnityEngine.Application::OpenURL
-UnityEngine.Application::Quit
 UnityEngine.Application::get_platform
+UnityEngine.AsyncOperation::InternalDestroy
+UnityEngine.AudioListener::get_volume
+UnityEngine.AudioListener::set_pause
+UnityEngine.AudioListener::set_volume
 UnityEngine.AudioSource::get_isPlaying
 UnityEngine.AudioSource::GetPitch
 UnityEngine.AudioSource::PlayHelper
@@ -177,6 +180,7 @@ UnityEngine.CanvasGroup::get_interactable
 UnityEngine.CanvasGroup::get_alpha
 UnityEngine.CanvasGroup::set_alpha
 UnityEngine.CanvasGroup::set_ignoreParentGroups
+UnityEngine.CanvasGroup::set_interactable
 UnityEngine.CanvasRenderer::get_cull
 UnityEngine.CanvasRenderer::get_cullTransparentMesh
 UnityEngine.CanvasRenderer::get_hasMoved
@@ -617,6 +621,9 @@ UnityEngine.Rigidbody::AddRelativeTorque_Injected
 UnityEngine.Rigidbody::get_velocity_Injected
 UnityEngine.Rigidbody::set_excludeLayers_Injected
 UnityEngine.Rigidbody::set_useGravity
+UnityEngine.SceneManagement.SceneManager::get_sceneCount
+UnityEngine.SceneManagement.SceneManager::GetSceneAt_Injected
+UnityEngine.SceneManagement.SceneManagerAPIInternal::LoadSceneAsyncNameIndexInternal_Injected
 UnityEngine.Screen::get_fullScreen
 UnityEngine.Screen::get_height
 UnityEngine.Screen::get_width
@@ -721,6 +728,7 @@ UnityEngine.Time::get_deltaTime
 UnityEngine.Time::get_realtimeSinceStartup
 UnityEngine.Time::get_unscaledDeltaTime
 UnityEngine.Time::get_unscaledTime
+UnityEngine.Time::set_timeScale
 UnityEngine.TouchScreenKeyboard::IsInPlaceEditingAllowed
 UnityEngine.TouchScreenKeyboard::get_active
 UnityEngine.TouchScreenKeyboard::get_canGetSelection

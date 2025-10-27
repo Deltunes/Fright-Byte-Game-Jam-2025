@@ -17,7 +17,8 @@ public class FPSController : MonoBehaviour
     public TextMeshProUGUI healthText;
     public Transform playerStartPosition;
     public int scrapCollected = 0;
-    public float playerHealth = 200f;
+    public float playerHealth = 60f;
+    public float playerHealthMax = 60f;
 
     private float walkSpeed = 4f;
 
@@ -35,7 +36,8 @@ public class FPSController : MonoBehaviour
 
     void Start()
     {
-        playerHealth = 200f;
+        playerHealthMax = 60f;
+        playerHealth = playerHealthMax;
         characterController = GetComponent<CharacterController>();
         transform.position = playerStartPosition.position;
         Cursor.lockState = CursorLockMode.Locked;
@@ -75,7 +77,7 @@ public class FPSController : MonoBehaviour
 
         // Scrap Text Display
         scrapText.text = scrapCollected.ToString() + "/10";
-        healthText.text = ((int)playerHealth).ToString() + "/200";
+        healthText.text = ((int)playerHealth).ToString() + "/60";
     }
 
     private void footstep()

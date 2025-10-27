@@ -6,10 +6,12 @@ public class CollectScrap : MonoBehaviour, IInteractable
 {
     public void Interact(CharacterController interactor, GameObject InteractVisual)
     {
+        FPSController player = interactor.GetComponent<FPSController>();
         if (Input.GetKeyDown(KeyCode.E) && gameObject.activeSelf)
         {
             gameObject.SetActive(false);
-            interactor.GetComponent<FPSController>().scrapCollected += 1;
+            player.scrapCollected += 1;
+            player.playerHealth = player.playerHealthMax;
         }
     }
 }

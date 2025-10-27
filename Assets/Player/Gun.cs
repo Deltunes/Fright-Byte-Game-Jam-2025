@@ -6,10 +6,13 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     [SerializeField] GameObject gun;
+    [SerializeField] GameObject muzzleFlash;
     [SerializeField] Animator gunAnimator;
     public Transform InteractorSource;
     public AudioSource gunSound;
     public float gunDamage;
+    private float gunTime;
+    private float gunCooldown;
     public float InteractRange;
 
     void Start()
@@ -17,15 +20,21 @@ public class Gun : MonoBehaviour
         gunSound = gun.GetComponent<AudioSource>();
         gunDamage = 10f;
         InteractRange = 30f;
+        gunTime = Time.time;
+        gunCooldown = 1.5f;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && gun.activeSelf)
+        muzzleFlash.SetActive(false);
+        if (Input.GetKeyDown(KeyCode.Mouse0) && gun.activeSelf && (gunTime + gunCooldown < Time.time))
         {
+            gunTime = Time.time;
             gunSound.Play();
             gunAnimator.Play("gunshot", 0, 0f);
-            //gunAnimator.SetTrigger("Gunshot");
+
+            muzzleFlash.SetActive(true);
+
             Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
             if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange))
             {
@@ -35,14 +44,11 @@ public class Gun : MonoBehaviour
                     if (hitInfo.collider.gameObject.GetComponent<EyeFollow>())
                     {
                         EyeFollow enemy = hitInfo.collider.gameObject.GetComponent<EyeFollow>();
-                        enemy.hurtSound.Play();
-                        enemy.eyeHealth -= gunDamage;
-                    }
-                    else if (hitInfo.collider.gameObject.GetComponent<EyeBoss>())
-                    {
-                        EyeBoss boss = hitInfo.collider.gameObject.GetComponent<EyeBoss>();
-                        boss.hurtSound.Play();
-                        boss.eyeHealth -= gunDamage;
+                        if (enemy.dead == false)
+                        {
+                            enemy.hurtSound.Play();
+                            enemy.eyeHealth -= gunDamage;
+                        }
                     }
                 }
             }

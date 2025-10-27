@@ -7,7 +7,6 @@ ScriptsOnlyBuild:
     - CollectScrap
     - CompleteScript
     - CraneController
-    - EyeBoss
     - EyeFollow
     - FPSController
     - FollowRigid
@@ -15,8 +14,9 @@ ScriptsOnlyBuild:
     - GunPickup
     - Interactor
     - ParentPlayerToBoat
+    - PauseMenu
     - PickupTrigger
-    - Quit
+    - PlayerDeath
     - SecretCode
     - driveBoat
     - waterFollow
@@ -41,6 +41,9 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -62,17 +65,27 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Style
     - TMPro.VertexGradient
     UnityEngine.CoreModule:
+    - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.Events.PersistentListenerMode
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
     - UnityEngine.TextCore.GlyphMetrics
     - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
-  methodsToPreserve: []
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.SpriteState
+  methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayerDeath
+    methodName: Restart
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/MainGameScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -132,53 +145,57 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17460}
     - Class: 114
+      Script: {instanceID: 17724}
+    - Class: 114
       Script: {instanceID: 17894}
     - Class: 114
       Script: {instanceID: 17928}
     - Class: 114
       Script: {instanceID: 18190}
     - Class: 114
-      Script: {instanceID: 18322}
+      Script: {instanceID: 18218}
     - Class: 114
-      Script: {instanceID: 18524}
+      Script: {instanceID: 18232}
     - Class: 114
-      Script: {instanceID: 18738}
+      Script: {instanceID: 18324}
     - Class: 114
-      Script: {instanceID: 18822}
+      Script: {instanceID: 18526}
     - Class: 114
-      Script: {instanceID: 19202}
+      Script: {instanceID: 18740}
     - Class: 114
-      Script: {instanceID: 19238}
+      Script: {instanceID: 18824}
     - Class: 114
-      Script: {instanceID: 19460}
+      Script: {instanceID: 19204}
     - Class: 114
-      Script: {instanceID: 19750}
+      Script: {instanceID: 19240}
     - Class: 114
-      Script: {instanceID: 20040}
+      Script: {instanceID: 19462}
     - Class: 114
-      Script: {instanceID: 20126}
+      Script: {instanceID: 19752}
     - Class: 114
-      Script: {instanceID: 20160}
+      Script: {instanceID: 20042}
     - Class: 114
-      Script: {instanceID: 20642}
+      Script: {instanceID: 20128}
     - Class: 114
-      Script: {instanceID: 20684}
+      Script: {instanceID: 20162}
     - Class: 114
-      Script: {instanceID: 20712}
+      Script: {instanceID: 20644}
     - Class: 114
-      Script: {instanceID: 20866}
+      Script: {instanceID: 20686}
     - Class: 114
-      Script: {instanceID: 21048}
+      Script: {instanceID: 20714}
     - Class: 114
-      Script: {instanceID: 21070}
+      Script: {instanceID: 20868}
     - Class: 114
-      Script: {instanceID: 22222}
+      Script: {instanceID: 21050}
     - Class: 114
-      Script: {instanceID: 22520}
+      Script: {instanceID: 21072}
     - Class: 114
-      Script: {instanceID: 23720}
+      Script: {instanceID: 21192}
     - Class: 114
-      Script: {instanceID: 50212}
+      Script: {instanceID: 22522}
+    - Class: 114
+      Script: {instanceID: 22540}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -202,6 +219,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
       Script: {instanceID: 0}
     - Class: 328
       Script: {instanceID: 0}
@@ -316,7 +335,7 @@ ScriptsOnlyBuild:
     className: GunPickup
   - hash:
       serializedVersion: 2
-      Hash: b4127ab63ce98b5c5aca59c5bad8d627
+      Hash: 81c5a44dfe08ea96e04c250d04d67ad0
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: FPSController
@@ -446,6 +465,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 620a167ff2d0b84908267d4133ab5cdf
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: waterOffset
   - hash:
       serializedVersion: 2
       Hash: d90629714fa6b0145fcaffc87f5c6559
@@ -892,7 +917,7 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpAsButtonMessageListener
   - hash:
       serializedVersion: 2
-      Hash: e22f6e4879a6f23b445e217b0ce35a87
+      Hash: 46a6a597943c536aea9a710742e0cc38
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ParentPlayerToBoat
@@ -1096,16 +1121,22 @@ ScriptsOnlyBuild:
     className: Variables
   - hash:
       serializedVersion: 2
-      Hash: ab3ce44d15e2e2b480a1a5a37d52b736
+      Hash: 52bf82b5fb76bc9bb82766a6c9d267ba
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: Quit
+    className: PauseMenu
   - hash:
       serializedVersion: 2
       Hash: b30c8635462e66ac20f4241106119f77
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
     className: StateMachine
+  - hash:
+      serializedVersion: 2
+      Hash: d5e222b59ce08f0149c47bc1fca33b9e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerDeath
   - hash:
       serializedVersion: 2
       Hash: 568292fb7ea6c4f7a667e5ff76bc7e85
@@ -1154,13 +1185,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 620a167ff2d0b84908267d4133ab5cdf
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: waterOffset
   platform: 20
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/MainGameScene.unity
   playerPath: C:/Users/elija/Unity Projects/FrightByteGameJam/WebGL Build
