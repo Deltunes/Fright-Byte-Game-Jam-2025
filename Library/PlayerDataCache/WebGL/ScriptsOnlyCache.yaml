@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AQUAS_Lite.AQUAS_Lite_Camera
     - AQUAS_Lite.AQUAS_Lite_Reflection
     - BoatRadar
     - CollectScrap
@@ -13,11 +14,13 @@ ScriptsOnlyBuild:
     - Gun
     - GunPickup
     - Interactor
+    - ParentPlayerToBoat
     - PickupTrigger
     - Quit
     - SecretCode
     - driveBoat
     - waterFollow
+    - waterOffset
     Unity.Play.Publisher.Editor.dll:
     - Unity.Play.Publisher.Editor.AnalyticsHelper
     Unity.Rider.Editor.dll:
@@ -137,6 +140,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18322}
     - Class: 114
+      Script: {instanceID: 18524}
+    - Class: 114
       Script: {instanceID: 18738}
     - Class: 114
       Script: {instanceID: 18822}
@@ -165,11 +170,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 21048}
     - Class: 114
-      Script: {instanceID: 22220}
+      Script: {instanceID: 21070}
     - Class: 114
-      Script: {instanceID: 22518}
+      Script: {instanceID: 22222}
     - Class: 114
-      Script: {instanceID: 23718}
+      Script: {instanceID: 22520}
+    - Class: 114
+      Script: {instanceID: 23720}
+    - Class: 114
+      Script: {instanceID: 50212}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -195,8 +204,6 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 328
-      Script: {instanceID: 0}
-    - Class: 329
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -675,7 +682,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerClickMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 25b53198277ec726d26eadac42c935c9
+      Hash: 22334eb68973dfaf76c892486eeb34fd
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: SecretCode
@@ -747,7 +754,7 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
-      Hash: 695ecb0f3943874d0138dc73a202f3e0
+      Hash: f58201058c02a39a5627d0e26407c06a
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: driveBoat
@@ -883,6 +890,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: e22f6e4879a6f23b445e217b0ce35a87
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ParentPlayerToBoat
   - hash:
       serializedVersion: 2
       Hash: 4f353524ce6564e40764f1ea080b2d85
@@ -1141,7 +1154,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 620a167ff2d0b84908267d4133ab5cdf
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: waterOffset
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/elija/Unity Projects/FrightByteGameJam/WebGL Builds
+  playerPath: C:/Users/elija/Unity Projects/FrightByteGameJam/WebGL Build

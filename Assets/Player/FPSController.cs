@@ -19,23 +19,23 @@ public class FPSController : MonoBehaviour
     public int scrapCollected = 0;
     public float playerHealth = 200f;
 
-    public float walkSpeed = 20f;
+    private float walkSpeed = 4f;
 
-    public float gravity = 20f;
+    private float gravity = 20f;
 
     public float lookSpeed = 2f;
-    public float lookXLimit = 90f;
+    private float lookXLimit = 90f;
 
     Vector3 moveVelocity = Vector3.zero;
     float rotationX = 0;
 
     public bool canMove = true;
-    //bool isRunning = false;
 
     CharacterController characterController;
 
     void Start()
     {
+        playerHealth = 200f;
         characterController = GetComponent<CharacterController>();
         transform.position = playerStartPosition.position;
         Cursor.lockState = CursorLockMode.Locked;
@@ -44,7 +44,6 @@ public class FPSController : MonoBehaviour
     
     void Update()
     {
-        //print(playerHealth);
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
         forward.Normalize();

@@ -1,10 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class SecretCode : MonoBehaviour
 {
     [SerializeField] GameObject familyGuy;
+    [SerializeField] VideoPlayer videoPlayer;
+
+    private void Start()
+    {
+        videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Family Guy Best Moments #1.mp4");
+    }
 
     // Update is called once per frame
     void Update()

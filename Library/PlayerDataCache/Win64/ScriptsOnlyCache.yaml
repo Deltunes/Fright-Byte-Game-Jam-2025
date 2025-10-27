@@ -19,8 +19,6 @@ ScriptsOnlyBuild:
     - SecretCode
     - driveBoat
     - waterFollow
-    Unity.Play.Publisher.Editor.dll:
-    - Unity.Play.Publisher.Editor.AnalyticsHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -166,13 +164,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 21048}
     - Class: 114
-      Script: {instanceID: 22220}
+      Script: {instanceID: 21070}
     - Class: 114
-      Script: {instanceID: 22518}
+      Script: {instanceID: 22222}
     - Class: 114
-      Script: {instanceID: 23718}
+      Script: {instanceID: 22520}
     - Class: 114
-      Script: {instanceID: 30688}
+      Script: {instanceID: 23720}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -888,6 +886,12 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpAsButtonMessageListener
   - hash:
       serializedVersion: 2
+      Hash: e22f6e4879a6f23b445e217b0ce35a87
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ParentPlayerToBoat
+  - hash:
+      serializedVersion: 2
       Hash: 4f353524ce6564e40764f1ea080b2d85
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1144,12 +1148,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: e22f6e4879a6f23b445e217b0ce35a87
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ParentPlayerToBoat
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
