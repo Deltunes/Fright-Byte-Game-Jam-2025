@@ -83,7 +83,7 @@ public class CraneController : MonoBehaviour, IInteractable
                 }
                 else if (Input.GetKey(KeyCode.A))
                 {
-                    if (cube1.transform.localRotation.z >= -0.1f)
+                    if (cube1.transform.localRotation.z >= 0f)
                     {
                         cube1.transform.Rotate(Vector3.forward, -45 * Time.deltaTime, Space.Self);
                     }

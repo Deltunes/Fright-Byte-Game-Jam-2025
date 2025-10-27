@@ -24,7 +24,7 @@ public class FPSController : MonoBehaviour
 
     private float gravity = 20f;
 
-    public float lookSpeed = 2f;
+    public float lookSpeed;
     private float lookXLimit = 90f;
 
     Vector3 moveVelocity = Vector3.zero;
@@ -36,6 +36,7 @@ public class FPSController : MonoBehaviour
 
     void Start()
     {
+        lookSpeed = 2f;
         playerHealthMax = 60f;
         playerHealth = playerHealthMax;
         characterController = GetComponent<CharacterController>();

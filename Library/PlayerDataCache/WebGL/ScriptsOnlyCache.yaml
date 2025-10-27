@@ -9,10 +9,12 @@ ScriptsOnlyBuild:
     - CraneController
     - EyeFollow
     - FPSController
+    - FadeIn
     - FollowRigid
     - Gun
     - GunPickup
     - Interactor
+    - MenuOptions
     - ParentPlayerToBoat
     - PauseMenu
     - PickupTrigger
@@ -48,6 +50,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.Slider
   serializedClasses:
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
@@ -79,11 +82,39 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: MenuOptions
+    methodName: StartGame
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuOptions
+    methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: OptionsBack
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Menu
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Resume
+  - assembly: Assembly-CSharp
     fullTypeName: PlayerDeath
     methodName: Restart
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Menu
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayerDeath
+    methodName: Restart
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Options
   sceneClasses:
     Assets/Scenes/MainGameScene.unity:
     - Class: 1
@@ -103,8 +134,6 @@ ScriptsOnlyBuild:
     - Class: 43
       Script: {instanceID: 0}
     - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
@@ -137,8 +166,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16872}
     - Class: 114
-      Script: {instanceID: 17302}
-    - Class: 114
       Script: {instanceID: 17428}
     - Class: 114
       Script: {instanceID: 17458}
@@ -165,37 +192,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18824}
     - Class: 114
-      Script: {instanceID: 19204}
-    - Class: 114
       Script: {instanceID: 19240}
-    - Class: 114
-      Script: {instanceID: 19462}
     - Class: 114
       Script: {instanceID: 19752}
     - Class: 114
       Script: {instanceID: 20042}
     - Class: 114
+      Script: {instanceID: 20090}
+    - Class: 114
       Script: {instanceID: 20128}
     - Class: 114
       Script: {instanceID: 20162}
     - Class: 114
-      Script: {instanceID: 20644}
+      Script: {instanceID: 20646}
     - Class: 114
-      Script: {instanceID: 20686}
+      Script: {instanceID: 20688}
     - Class: 114
-      Script: {instanceID: 20714}
+      Script: {instanceID: 20716}
     - Class: 114
-      Script: {instanceID: 20868}
+      Script: {instanceID: 20870}
     - Class: 114
-      Script: {instanceID: 21050}
+      Script: {instanceID: 20958}
     - Class: 114
-      Script: {instanceID: 21072}
+      Script: {instanceID: 21054}
     - Class: 114
-      Script: {instanceID: 21192}
+      Script: {instanceID: 21076}
     - Class: 114
-      Script: {instanceID: 22522}
+      Script: {instanceID: 21196}
     - Class: 114
-      Script: {instanceID: 22540}
+      Script: {instanceID: 22526}
+    - Class: 114
+      Script: {instanceID: 22544}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -223,6 +250,63 @@ ScriptsOnlyBuild:
     - Class: 225
       Script: {instanceID: 0}
     - Class: 328
+      Script: {instanceID: 0}
+    Assets/Scenes/StartMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16720}
+    - Class: 114
+      Script: {instanceID: 17302}
+    - Class: 114
+      Script: {instanceID: 17428}
+    - Class: 114
+      Script: {instanceID: 17724}
+    - Class: 114
+      Script: {instanceID: 17928}
+    - Class: 114
+      Script: {instanceID: 18218}
+    - Class: 114
+      Script: {instanceID: 19204}
+    - Class: 114
+      Script: {instanceID: 19462}
+    - Class: 114
+      Script: {instanceID: 20162}
+    - Class: 114
+      Script: {instanceID: 20236}
+    - Class: 114
+      Script: {instanceID: 20716}
+    - Class: 114
+      Script: {instanceID: 20870}
+    - Class: 114
+      Script: {instanceID: 21196}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -335,7 +419,7 @@ ScriptsOnlyBuild:
     className: GunPickup
   - hash:
       serializedVersion: 2
-      Hash: 81c5a44dfe08ea96e04c250d04d67ad0
+      Hash: 4892d5ee3631e66b101fcc2d7cb2644f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: FPSController
@@ -665,7 +749,7 @@ ScriptsOnlyBuild:
     className: UnityOnJointBreak2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: a6f0ab9752a92becd9200248fbe3f4fb
+      Hash: 483096fa43ed72b9dbdd28911c93ce06
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: EyeFollow
@@ -827,6 +911,12 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: ff8f5b5b3e746912f529aac64317d3c7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MenuOptions
+  - hash:
+      serializedVersion: 2
       Hash: d82086405f46de14829f6b4bcbdd8fc9
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -905,7 +995,13 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: b13d95a7fe76d487479024a9f0cdb15c
+      Hash: 8c7759d6d9d405a172a6c6a915e71880
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: FadeIn
+  - hash:
+      serializedVersion: 2
+      Hash: 56e4659709c6cc9cb70621caadef69e8
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Gun
@@ -1121,7 +1217,7 @@ ScriptsOnlyBuild:
     className: Variables
   - hash:
       serializedVersion: 2
-      Hash: 52bf82b5fb76bc9bb82766a6c9d267ba
+      Hash: f28ca1b263bfad8721f52c25f9c465ad
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PauseMenu
@@ -1187,5 +1283,6 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   platform: 20
   scenePathNames:
+  - Assets/Scenes/StartMenu.unity
   - Assets/Scenes/MainGameScene.unity
   playerPath: C:/Users/elija/Unity Projects/FrightByteGameJam/WebGL Build

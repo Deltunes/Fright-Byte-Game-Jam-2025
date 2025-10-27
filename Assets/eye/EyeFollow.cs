@@ -9,11 +9,13 @@ public class EyeFollow : MonoBehaviour
     [SerializeField] AudioSource passiveSound;
     Rigidbody rb;
     
-    public float detectRange = 30f;
+    private float detectRange;
+    private float eyeSpeed;
+    private bool boatSpotted;
+    private float lockOnDistance;
+
     public bool dead;
-    public float eyeHealth = 60f;
-    public float eyeSpeed = 40f;
-    bool boatSpotted;
+    public float eyeHealth;
 
     private void Start()
     {
@@ -21,6 +23,23 @@ public class EyeFollow : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
         boatSpotted = false;
+
+        bool webGLBuild = true;
+        if (webGLBuild)
+        {
+            detectRange = 50f;
+            eyeHealth = 60f;
+            eyeSpeed = 160f;
+            lockOnDistance = 6f;
+        }
+        else
+        {
+            print("oops");
+            detectRange = 30f;
+            eyeHealth = 60f;
+            eyeSpeed = 80;
+            lockOnDistance = 3f;
+        }
     }
 
     // Update is called once per frame

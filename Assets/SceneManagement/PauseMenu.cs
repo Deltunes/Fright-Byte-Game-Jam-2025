@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] FPSController FPS;
     [SerializeField] GameObject pauseMenuUI;
+    [SerializeField] GameObject optionsMenuUI;
+    [SerializeField] Slider mouseSensSlider;
+    [SerializeField] TextMeshProUGUI mouseSensSliderVal;
     public float playerLookSpeed;
     public bool isPaused;
 
@@ -22,7 +27,7 @@ public class PauseMenu : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
             if (isPaused == false)
             {
@@ -32,7 +37,11 @@ public class PauseMenu : MonoBehaviour
             {
                 Resume();   
             }
-            //Application.Quit();
+        }
+
+        if (optionsMenuUI.activeSelf)
+        {
+            updateSlider();
         }
     }
     
@@ -65,6 +74,29 @@ public class PauseMenu : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene("StartMenu");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void Options()
+    {
+        pauseMenuUI.SetActive(false);
+        optionsMenuUI.SetActive(true);
+    }
+
+    public void OptionsBack()
+    {
+        pauseMenuUI.SetActive(true);
+        optionsMenuUI.SetActive(false);
+    }
+    
+    public void updateSlider()
+    {
+        mouseSensSliderVal.text = (mouseSensSlider.value * 50).ToString("0");
+        playerLookSpeed = mouseSensSlider.value;
     }
 }
 

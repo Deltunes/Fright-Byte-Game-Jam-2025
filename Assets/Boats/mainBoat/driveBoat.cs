@@ -15,13 +15,33 @@ public class driveBoat : MonoBehaviour, IInteractable
     float currSpeed;
     float currRotate;
 
+    private float boatForwardSpeed;
+    private float boatBackwardSpeed;
+    private float boatRotateSpeed;
+    private float boatMaxSpeed;
+
+    private void Start()
+    {
+        bool webGLBuild = true;
+        if (webGLBuild)
+        {
+            boatForwardSpeed = 200f;
+            boatBackwardSpeed = 50f;
+            boatRotateSpeed = 150f;
+            boatMaxSpeed = 100f;
+        }
+        else
+        {
+            print("oops");
+            boatForwardSpeed = 100f;
+            boatBackwardSpeed = 50f;
+            boatRotateSpeed = 80f;
+            boatMaxSpeed = 100f;
+        }
+    }
+
     private void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            currSpeed = 100f;
-            rb.AddRelativeForce(Vector3.forward * currSpeed);
-        }
         if (playerDriving)
         {
             currSpeed = 0f;
@@ -33,27 +53,27 @@ public class driveBoat : MonoBehaviour, IInteractable
                 {
                     engineSound.pitch += 0.001f;
                 }
-                currSpeed = 100f;
+                currSpeed = boatForwardSpeed;
             }
             else if (Input.GetKey(KeyCode.S))
             {
-                currSpeed = -50f;
+                currSpeed = -boatBackwardSpeed;
             }
 
             if (Input.GetKey(KeyCode.D))
             {
-                currRotate = 80f;
+                currRotate = boatRotateSpeed;
                 transform.Rotate(Vector3.up, 200 * Time.deltaTime, Space.Self);
             }
             if (Input.GetKey(KeyCode.A))
             {
-                currRotate = -80f;
+                currRotate = -boatRotateSpeed;
                 transform.Rotate(Vector3.up, -200 * Time.deltaTime, Space.Self);
             }
 
             rb.AddRelativeTorque(rb.transform.up * currRotate);
 
-            if (rb.velocity.magnitude < 100.0f)
+            if (rb.velocity.magnitude < boatMaxSpeed)
             {
                 rb.AddRelativeForce(Vector3.forward * currSpeed);
             }
