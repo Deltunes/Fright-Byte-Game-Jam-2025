@@ -25,7 +25,7 @@ public class driveBoat : MonoBehaviour, IInteractable
         bool webGLBuild = true;
         if (webGLBuild)
         {
-            boatForwardSpeed = 200f;
+            boatForwardSpeed = 160f;
             boatBackwardSpeed = 50f;
             boatRotateSpeed = 150f;
             boatMaxSpeed = 100f;

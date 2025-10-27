@@ -65,6 +65,7 @@
     <Compile Include="Assets\Player\FlashlightController.cs" />
     <Compile Include="Assets\SceneManagement\MenuOptions.cs" />
     <Compile Include="Assets\TV\SecretCode.cs" />
+    <Compile Include="Assets\ClipboardPosition.cs" />
     <Compile Include="Assets\SceneManagement\PauseMenu.cs" />
     <Compile Include="Assets\water\waterOffset.cs" />
     <Compile Include="Assets\eye\EyeBoss.cs" />
@@ -82,8 +83,10 @@
     <Compile Include="Assets\eye\EyeFollow.cs" />
     <Compile Include="Assets\Crane\CraneController.cs" />
     <Compile Include="Assets\water\AQUAS-Lite\Scripts\AQUAS_Lite_CamNav.cs" />
+    <Compile Include="Assets\ClipPageTurn.cs" />
     <Compile Include="Assets\water\AQUAS-Lite\Scripts\AQUAS_Lite_Reflection.cs" />
     <Compile Include="Assets\Player\FPSController.cs" />
+    <Compile Include="Assets\ClipboardPickup.cs" />
     <Compile Include="Assets\SceneManagement\CompleteScript.cs" />
   </ItemGroup>
   <ItemGroup>
