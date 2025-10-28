@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] GameObject optionsMenuUI;
     [SerializeField] Slider mouseSensSlider;
     [SerializeField] TextMeshProUGUI mouseSensSliderVal;
+    [SerializeField] VideoPlayer vidPlayer;
     public float playerLookSpeed;
     public bool isPaused;
 
@@ -54,6 +56,7 @@ public class PauseMenu : MonoBehaviour
         AudioListener.pause = true;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        vidPlayer.Pause();
 
         pauseMenuUI.SetActive(true);
     }
@@ -67,6 +70,7 @@ public class PauseMenu : MonoBehaviour
         AudioListener.pause = false;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        vidPlayer.Play();
 
         pauseMenuUI.SetActive(false);
     }

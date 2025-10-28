@@ -4,7 +4,11 @@ ScriptsOnlyBuild:
     - AQUAS_Lite.AQUAS_Lite_Camera
     - AQUAS_Lite.AQUAS_Lite_Reflection
     - BoatRadar
+    - ClipPageTurn
+    - ClipboardPickup
+    - ClipboardPosition
     - CollectScrap
+    - CompEnemySpawner
     - CompleteScript
     - CraneController
     - EyeFollow
@@ -20,11 +24,13 @@ ScriptsOnlyBuild:
     - PickupTrigger
     - PlayerDeath
     - SecretCode
+    - TurnOffWalkie
     - driveBoat
     - waterFollow
     - waterOffset
     Unity.Play.Publisher.Editor.dll:
     - Unity.Play.Publisher.Editor.AnalyticsHelper
+    - Unity.Play.Publisher.Editor.PublisherWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -95,6 +101,9 @@ ScriptsOnlyBuild:
     fullTypeName: PauseMenu
     methodName: QuitGame
   - assembly: Assembly-CSharp
+    fullTypeName: PlayerDeath
+    methodName: Restart
+  - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: OptionsBack
   - assembly: Assembly-CSharp
@@ -106,6 +115,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: PlayerDeath
     methodName: Restart
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: Menu
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: Menu
@@ -190,39 +202,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18740}
     - Class: 114
-      Script: {instanceID: 18824}
+      Script: {instanceID: 18804}
     - Class: 114
-      Script: {instanceID: 19240}
+      Script: {instanceID: 18826}
     - Class: 114
-      Script: {instanceID: 19752}
+      Script: {instanceID: 19242}
     - Class: 114
-      Script: {instanceID: 20042}
+      Script: {instanceID: 19554}
     - Class: 114
-      Script: {instanceID: 20090}
+      Script: {instanceID: 19756}
     - Class: 114
-      Script: {instanceID: 20128}
+      Script: {instanceID: 20046}
     - Class: 114
-      Script: {instanceID: 20162}
+      Script: {instanceID: 20094}
     - Class: 114
-      Script: {instanceID: 20646}
+      Script: {instanceID: 20132}
     - Class: 114
-      Script: {instanceID: 20688}
+      Script: {instanceID: 20166}
     - Class: 114
-      Script: {instanceID: 20716}
+      Script: {instanceID: 20650}
     - Class: 114
-      Script: {instanceID: 20870}
+      Script: {instanceID: 20692}
     - Class: 114
-      Script: {instanceID: 20958}
+      Script: {instanceID: 20720}
     - Class: 114
-      Script: {instanceID: 21054}
+      Script: {instanceID: 20874}
     - Class: 114
-      Script: {instanceID: 21076}
+      Script: {instanceID: 20962}
     - Class: 114
-      Script: {instanceID: 21196}
+      Script: {instanceID: 21058}
     - Class: 114
-      Script: {instanceID: 22526}
+      Script: {instanceID: 21080}
     - Class: 114
-      Script: {instanceID: 22544}
+      Script: {instanceID: 21200}
+    - Class: 114
+      Script: {instanceID: 22420}
+    - Class: 114
+      Script: {instanceID: 22532}
+    - Class: 114
+      Script: {instanceID: 22550}
+    - Class: 114
+      Script: {instanceID: 80494}
+    - Class: 114
+      Script: {instanceID: 165782}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -281,19 +303,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18218}
     - Class: 114
-      Script: {instanceID: 19204}
+      Script: {instanceID: 19206}
     - Class: 114
-      Script: {instanceID: 19462}
+      Script: {instanceID: 19464}
     - Class: 114
-      Script: {instanceID: 20162}
+      Script: {instanceID: 20166}
     - Class: 114
-      Script: {instanceID: 20236}
+      Script: {instanceID: 20240}
     - Class: 114
-      Script: {instanceID: 20716}
+      Script: {instanceID: 20720}
     - Class: 114
-      Script: {instanceID: 20870}
+      Script: {instanceID: 20874}
     - Class: 114
-      Script: {instanceID: 21196}
+      Script: {instanceID: 20962}
+    - Class: 114
+      Script: {instanceID: 21200}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -307,6 +331,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -413,13 +439,13 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 00e083b3b5bf3c83ab8a2a6617cd2690
+      Hash: 4cbf03af8445d43c645d4df3d07d13a8
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GunPickup
   - hash:
       serializedVersion: 2
-      Hash: 4892d5ee3631e66b101fcc2d7cb2644f
+      Hash: b935e0615bed8026421d7a3bf490350d
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: FPSController
@@ -575,7 +601,7 @@ ScriptsOnlyBuild:
     className: UnityOnMouseDragMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 5269bba5b2472849e224bc9aeb66ad40
+      Hash: 700666a33bd1ccb2718fbc317358f931
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CompleteScript
@@ -665,13 +691,19 @@ ScriptsOnlyBuild:
     className: PickupTrigger
   - hash:
       serializedVersion: 2
+      Hash: 1be9461c264891d20ba1152d4547e7af
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ClipboardPosition
+  - hash:
+      serializedVersion: 2
       Hash: 0a3f328f3ea906bbbcf794f4c27ee59d
     assemblyName: Unity.VisualScripting.Flow
     namespaceName: Unity.VisualScripting
     className: ScriptGraphAsset
   - hash:
       serializedVersion: 2
-      Hash: 784730ee28b5ebd56486a7ec158983ef
+      Hash: d189af241dd15336c1271858fe30c929
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CollectScrap
@@ -777,6 +809,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCancelMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: cb3d654d8d5c82b347d910b88cbdb4d3
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ClipboardPickup
   - hash:
       serializedVersion: 2
       Hash: b513270740adbfd89a42af657a14d058
@@ -1199,6 +1237,12 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: 1c827892cd99576a6bff4193d02afae3
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ClipPageTurn
+  - hash:
+      serializedVersion: 2
       Hash: 9a174471d4db2c0c6d3ac47d2f818db1
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1217,7 +1261,7 @@ ScriptsOnlyBuild:
     className: Variables
   - hash:
       serializedVersion: 2
-      Hash: f28ca1b263bfad8721f52c25f9c465ad
+      Hash: 3235768873644c5891158862155b59be
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PauseMenu
@@ -1229,7 +1273,7 @@ ScriptsOnlyBuild:
     className: StateMachine
   - hash:
       serializedVersion: 2
-      Hash: d5e222b59ce08f0149c47bc1fca33b9e
+      Hash: a10add129ee7ec2b618e860857a098c2
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerDeath
@@ -1281,6 +1325,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: ab2789773ad0e576310e5962e6d5cad9
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CompEnemySpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 0b5cf681662838256a57ffd544bb3693
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TurnOffWalkie
   platform: 20
   scenePathNames:
   - Assets/Scenes/StartMenu.unity

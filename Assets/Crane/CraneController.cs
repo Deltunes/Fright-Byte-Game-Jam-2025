@@ -97,12 +97,10 @@ public class CraneController : MonoBehaviour, IInteractable
     }
     public void Interact(CharacterController interactor, GameObject InteractVisual)
     {
-        
+        FPS = interactor.GetComponent<FPSController>();
         InteractVisual.transform.position = EPosition.position;
-        if (Input.GetKeyDown(KeyCode.E) && !gun.activeSelf)
+        if (Input.GetKeyDown(KeyCode.E) && !FPS.isHolding)
         {
-            FPS = interactor.GetComponent<FPSController>();
-
             if (playerDriving == false)
             {
                 playerDriving = true;

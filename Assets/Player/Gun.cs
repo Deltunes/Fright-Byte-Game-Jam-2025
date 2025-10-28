@@ -40,7 +40,7 @@ public class Gun : MonoBehaviour
             {
                 if (hitInfo.collider.gameObject.tag == "Destructable")
                 {
-                    hitInfo.collider.GetComponent<Rigidbody>().AddForceAtPosition(InteractorSource.forward * 2000f, hitInfo.point);
+                    hitInfo.collider.GetComponent<Rigidbody>().AddForceAtPosition(InteractorSource.forward * 4000f, hitInfo.point);
                     if (hitInfo.collider.gameObject.GetComponent<EyeFollow>())
                     {
                         EyeFollow enemy = hitInfo.collider.gameObject.GetComponent<EyeFollow>();

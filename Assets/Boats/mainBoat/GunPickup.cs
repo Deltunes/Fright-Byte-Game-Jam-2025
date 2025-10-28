@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GunPickup : MonoBehaviour, IInteractable
 {
+    [SerializeField] FPSController FPS;
     [SerializeField] GameObject shotgunTable;
     [SerializeField] GameObject shotgunPlayer;
     [SerializeField] Transform EPosition;
@@ -16,13 +17,18 @@ public class GunPickup : MonoBehaviour, IInteractable
         {
             if (shotgunTable.activeSelf)
             {
-                shotgunTable.SetActive(false);
-                shotgunPlayer.SetActive(true);
+                if (FPS.isHolding == false)
+                {
+                    shotgunTable.SetActive(false);
+                    shotgunPlayer.SetActive(true);
+                    FPS.isHolding = true;
+                }
             }
             else
             {
                 shotgunTable.SetActive(true);
                 shotgunPlayer.SetActive(false);
+                FPS.isHolding = false;
             }    
         }
     }

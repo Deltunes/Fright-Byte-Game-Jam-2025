@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EyeFollow : MonoBehaviour
 {
-    [SerializeField] GameObject player;
+    [SerializeField] public GameObject player;
     [SerializeField] public AudioSource hurtSound;
     [SerializeField] AudioSource passiveSound;
     Rigidbody rb;
@@ -24,21 +24,21 @@ public class EyeFollow : MonoBehaviour
         rb.useGravity = false;
         boatSpotted = false;
 
-        bool webGLBuild = true;
+        bool webGLBuild = false;
         if (webGLBuild)
         {
-            detectRange = 50f;
+            detectRange = 80f;
             eyeHealth = 60f;
             eyeSpeed = 160f;
-            lockOnDistance = 6f;
+            lockOnDistance = 8f;
         }
         else
         {
             print("oops");
-            detectRange = 30f;
+            detectRange = 80f;
             eyeHealth = 60f;
-            eyeSpeed = 80;
-            lockOnDistance = 3f;
+            eyeSpeed = 120f;
+            lockOnDistance = 5f;
         }
     }
 
@@ -85,7 +85,7 @@ public class EyeFollow : MonoBehaviour
             
             if (rb.transform.position.y < -9f)
             {
-                rb.AddForce(Vector3.up * 80f);
+                rb.AddForce(Vector3.up * 160f);
             }
         }
     }

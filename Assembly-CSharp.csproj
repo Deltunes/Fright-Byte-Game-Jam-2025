@@ -64,29 +64,30 @@
     <Compile Include="Assets\water\waterFollow.cs" />
     <Compile Include="Assets\Player\FlashlightController.cs" />
     <Compile Include="Assets\SceneManagement\MenuOptions.cs" />
+    <Compile Include="Assets\clipboard\ClipboardPickup.cs" />
     <Compile Include="Assets\TV\SecretCode.cs" />
-    <Compile Include="Assets\ClipboardPosition.cs" />
+    <Compile Include="Assets\clipboard\ClipPageTurn.cs" />
     <Compile Include="Assets\SceneManagement\PauseMenu.cs" />
     <Compile Include="Assets\water\waterOffset.cs" />
-    <Compile Include="Assets\eye\EyeBoss.cs" />
     <Compile Include="Assets\Boats\mainBoat\BoatRadar.cs" />
     <Compile Include="Assets\Player\Interactor.cs" />
     <Compile Include="Assets\SceneManagement\PlayerDeath.cs" />
     <Compile Include="Assets\SceneManagement\ParentPlayerToBoat.cs" />
     <Compile Include="Assets\Boats\mainBoat\GunPickup.cs" />
+    <Compile Include="Assets\clipboard\ClipboardPosition.cs" />
     <Compile Include="Assets\Boats\mainBoat\driveBoat.cs" />
+    <Compile Include="Assets\SceneManagement\CompEnemySpawner.cs" />
     <Compile Include="Assets\Crane\CollectScrap.cs" />
     <Compile Include="Assets\Boats\mainBoat\FollowRigid.cs" />
     <Compile Include="Assets\Player\Gun.cs" />
+    <Compile Include="Assets\TurnOffWalkie.cs" />
     <Compile Include="Assets\Crane\PickupTrigger.cs" />
     <Compile Include="Assets\water\AQUAS-Lite\Scripts\AQUAS_Lite_Camera.cs" />
     <Compile Include="Assets\eye\EyeFollow.cs" />
     <Compile Include="Assets\Crane\CraneController.cs" />
     <Compile Include="Assets\water\AQUAS-Lite\Scripts\AQUAS_Lite_CamNav.cs" />
-    <Compile Include="Assets\ClipPageTurn.cs" />
     <Compile Include="Assets\water\AQUAS-Lite\Scripts\AQUAS_Lite_Reflection.cs" />
     <Compile Include="Assets\Player\FPSController.cs" />
-    <Compile Include="Assets\ClipboardPickup.cs" />
     <Compile Include="Assets\SceneManagement\CompleteScript.cs" />
   </ItemGroup>
   <ItemGroup>

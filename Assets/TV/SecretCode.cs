@@ -10,7 +10,7 @@ public class SecretCode : MonoBehaviour
 
     private void Start()
     {
-        videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Family Guy Best Moments #1.mp4");
+        videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, "family guy funny moments.mp4");
     }
 
     // Update is called once per frame

@@ -43,11 +43,12 @@ public class PlayerDeath : MonoBehaviour
 
         if (dead == true)
         {
-            if (!complete) { deathScreen.interactable = true; } else { completionDeathScreen.interactable = true; }
+            if (!complete) { deathScreen.interactable = true; deathScreen.blocksRaycasts = true; } else { completionDeathScreen.interactable = true; completionDeathScreen.blocksRaycasts = true; }
             FPS.lookSpeed = 0f;
             Time.timeScale = 0f;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+
 
             if (!complete)
             {

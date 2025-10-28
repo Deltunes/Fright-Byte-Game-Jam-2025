@@ -22,7 +22,7 @@ public class driveBoat : MonoBehaviour, IInteractable
 
     private void Start()
     {
-        bool webGLBuild = true;
+        bool webGLBuild = false;
         if (webGLBuild)
         {
             boatForwardSpeed = 160f;
@@ -95,8 +95,11 @@ public class driveBoat : MonoBehaviour, IInteractable
 
             if (playerDriving == false)
             {
-                playerDriving = true;
-                FPS.canMove = false;
+                if (FPS.isHolding == false)
+                {
+                    playerDriving = true;
+                    FPS.canMove = false;
+                }
             }
             else
             {

@@ -16,7 +16,7 @@ public class Interactor : MonoBehaviour
     // Update is called once per frame
     private void Start()
     {
-        InteractRange = 1.5f;
+        InteractRange = 2f;
         player = GetComponent<CharacterController>();
     }
     void Update()

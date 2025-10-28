@@ -31,11 +31,13 @@ public class FPSController : MonoBehaviour
     float rotationX = 0;
 
     public bool canMove = true;
+    public bool isHolding;
 
     CharacterController characterController;
 
     void Start()
     {
+        isHolding = false;
         lookSpeed = 2f;
         playerHealthMax = 60f;
         playerHealth = playerHealthMax;
